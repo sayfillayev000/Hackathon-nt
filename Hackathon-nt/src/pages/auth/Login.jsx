@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-children-prop */
 import React from "react";
 import AuthContainer from "../../components/template/AuthContainer";
 import { SingInImg } from "../../assets/images";

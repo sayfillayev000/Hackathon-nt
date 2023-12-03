@@ -1,5 +1,4 @@
 import React, { lazy } from "react";
-
 export const authRoutes = [
   {
     key: "register",
