@@ -7,7 +7,7 @@ import { setSingOutSuccess } from "../store/auth/sessionSlice";
 // const selector = useSelector((state) => state);
 
 // console.log(selector);
-
+console.log('nimadir');
 const unAuthenticatedCode = ["403"];
 const BaseService = axios.create({
   timeout: 10000,
