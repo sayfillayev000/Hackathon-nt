@@ -1,0 +1,45 @@
+.action-link {
+  color: #549ff9;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-input {
+  width: 330px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--gray-30, #b4b4bb);
+  background: var(--White-Base, #fff);
+  padding: 15px 30px;
+  outline: none;
+
+  &::placeholder {
+    color: #aaa;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.default-btn {
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 99px;
+  background: #152540;
+  border: none;
+  outline: none;
+  width: 328px;
+  height: 46px;
+  flex-shrink: 0;
+  cursor: pointer;
+
+}
+
+.default-btn {
+  @include globalFontStyle();
+  /* 200% */
+}
