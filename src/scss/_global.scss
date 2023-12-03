@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+//Global variables 
+$White-Base: #FFF;
+$Black-Base: #000;
+
+// 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+;
+
+a {
+    text-decoration: none;
+}
+
+;
+
+li,
+ol {
+    list-style: none;
+}
+
+;
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@mixin globalFontStyle($color:#FFF) {
+    color: $color;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    /* 200% */
+}
