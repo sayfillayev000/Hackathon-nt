@@ -21,17 +21,16 @@
     line-height: normal;
   }
 }
-.default-btn{
+.default-btn {
   text-align: center;
   padding: 5px 20px;
   border-radius: 99px;
   background: #152540;
-  color: var(--White-Base, #FFF);
-text-align: center;
-font-family: Red Hat Display;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 36px; 
-cursor: pointer;
+  color: var(--White-Base, #fff);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  cursor: pointer;
 }
