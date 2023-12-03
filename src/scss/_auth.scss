@@ -4,7 +4,8 @@
 }
 .auth-inner {
   display: flex;
-  gap: 20px;
+  gap: 121px;
+  padding: 0 30px;
   align-items: center;
 }
 .auth-title {
@@ -35,7 +36,7 @@
   align-items: baseline;
   max-width: 330px;
   width: 100%;
-  input{
+  input, button{
     width: 100%;
   }
 }

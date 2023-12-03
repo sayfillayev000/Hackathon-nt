@@ -17,7 +17,7 @@ const Register = () => {
           <TextInput placeholder='Telefon raqam'/>
           <TextInput placeholder='Email'/>
           <TextInput placeholder='Parol'/>
-          <Button children='buttun'/>
+          <Button children='Keyingi qadam'/>
         </Form>
       </AuthContainer>
   )
