@@ -1,8 +1,12 @@
 import React from 'react'
+import ProfileHeader from '../../../components/template/ProfileHeader'
 
 const Security = () => {
   return (
-    <div>Security</div>
+    <>
+      <ProfileHeader />
+      <div>Security</div>
+    </>
   )
 }
 

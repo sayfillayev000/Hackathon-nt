@@ -1,8 +1,12 @@
 import React from 'react'
+import ProfileHeader from '../../../components/template/ProfileHeader'
 
 const Settings = () => {
   return (
-    <div>settings</div>
+    <>
+      <ProfileHeader />
+      <h1>Settings</h1>
+    </>
   )
 }
 
