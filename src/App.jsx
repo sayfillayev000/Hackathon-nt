@@ -5,9 +5,9 @@ import { authRoutes, protectRoutes } from "./configs/routes";
 import { useSelector } from "react-redux";
 import AppRoute from "./components/route/AppRoute";
 import AuthRoutes from "./components/route/AuthRoutes";
-import Register from "./pages/auth/Register";
 import ChackAuth from "./components/route/ChackAuth";
 import "./scss/index.scss";
+import CreateAuthor from "./pages/private/create/CreateAuthor";
 const App = () => {
   const { singIn } = useSelector((state) => state.session);
   const { role } = useSelector((state) => state.user);
@@ -15,6 +15,7 @@ const App = () => {
   console.log(role);
   return (
     <Suspense fallback={<p>Loading...</p>}>
+      <CreateAuthor />
       <Routes>
         <Route path="/" element={<ProtectRoutes isAuthenticated={singIn} />}>
           {protectRoutes.map((route) => (
