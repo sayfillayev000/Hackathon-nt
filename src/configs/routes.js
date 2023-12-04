@@ -1,10 +1,9 @@
 import React, { lazy } from "react";
-
 export const authRoutes = [
   {
     key: "register",
     path: "/register",
-    component: lazy(() => import('../pages/auth/Register')),
+    component: lazy(() => import("../pages/auth/Register")),
   },
   {
     key: "login",
@@ -18,36 +17,36 @@ export const protectRoutes = [
     key: "home",
     path: "/",
     role: ["admin", "user"],
-    component: lazy(() => import('../pages/private/Home')),
+    component: lazy(() => import("../pages/private/Home")),
   },
   {
     key: "books",
     path: "/books",
     role: ["admin", "user"],
-    component: lazy(() => import('../pages/private/Books')),
+    component: lazy(() => import("../pages/private/Books")),
   },
   {
     key: "profile",
     path: "/profile",
     role: ["admin", "user"],
-    component: lazy(() => import('../pages/private/profile')),
+    component: lazy(() => import("../pages/private/profile")),
   },
   {
     key: "security",
     path: "/security",
     role: ["admin", "user"],
-    component: lazy(() => import('../pages/private/create/CreateAuthor')),
+    component: lazy(() => import("../pages/private/create/CreateBook")),
   },
   {
     key: "create-book",
     path: "/create-book",
     role: ["admin"],
-    component: lazy(() => import('../pages/private/create/CreateBook')),
+    component: lazy(() => import("../pages/private/create/CreateAuthor")),
   },
   {
     key: "create-author",
     path: "/create-author",
     role: ["admin"],
-    component: lazy(() => import('../pages/private/create/CreateAuthor')),
+    component: lazy(() => import("../pages/private/create/CreateBook")),
   },
 ];

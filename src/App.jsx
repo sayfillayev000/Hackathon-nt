@@ -8,6 +8,7 @@ import AuthRoutes from "./components/route/AuthRoutes";
 import ChackAuth from "./components/route/ChackAuth";
 import "./scss/index.scss";
 import CreateAuthor from "./pages/private/create/CreateAuthor";
+import CreateBook from "./pages/private/create/CreateBook";
 const App = () => {
   const { singIn } = useSelector((state) => state.session);
   const { role } = useSelector((state) => state.user);
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <CreateAuthor />
+      <CreateBook />
       <Routes>
         <Route path="/" element={<ProtectRoutes isAuthenticated={singIn} />}>
           {protectRoutes.map((route) => (
