@@ -1,13 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const ProfileHeader = ({ active: propActive }) => {
-  const [active, setActive] = useState(propActive);
+const ProfileHeader = () => {
+  const [active, setActive] = useState('');
+  useEffect(() => {
+    document.addEventListener("DOMContentLoaded",()=>{
+      setActive('Profile')
+    })
+  },[])
+  const handleChangeActive = (propActive) => {
+    if (active === propActive) {
+      return;
+    }
+    setActive(propActive);
+  };
 
   const Items = [
     {
       name: 'Profile',
-      path: '/profile',
+      path: '/profile/' || "/profile/profile",
     },
     {
       name: 'Security',
@@ -27,8 +38,12 @@ const ProfileHeader = ({ active: propActive }) => {
             <NavLink
               to={item.path}
               className={`nav_link ${active === item.name ? 'active' : ''}`}
+              onClick={() => handleChangeActive(item.name)}
             >
-              {item.name}
+              <span className='number_item'>
+                {index+1}
+              </span>
+              <span data-type = "link_name">{item.name}</span>
             </NavLink>
           </li>
         ))}

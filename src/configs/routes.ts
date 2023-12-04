@@ -6,6 +6,7 @@ const Login = lazy(() => import("../pages/auth/Login"));
 const Home = lazy(() => import("../pages/private/Home"));
 const Books = lazy(() => import("../pages/private/Books"));
 const Profile = lazy(() => import("../pages/private/Profile"));
+const ProfileMain = lazy(() => import("../pages/private/profile/Profile"));
 const Security = lazy(() => import("../pages/private/profile/Security"));
 const Settings = lazy(() => import("../pages/private/profile/Settings"));
 const CreateBook = lazy(() => import("../pages/private/create/CreateBook"));
@@ -53,6 +54,12 @@ export const protectRoutes = [
         path: "/profile/settings",
         role: ["admin", "user"],
         component: Settings,
+      },
+      {
+        key: "settings",
+        path: "/profile/",
+        role: ["admin", "user"],
+        component: ProfileMain,
       },
       // Add more child routes here if needed
     ],
