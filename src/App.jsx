@@ -8,11 +8,13 @@ import AuthRoutes from "./components/route/AuthRoutes";
 import Register from "./pages/auth/Register";
 import ChackAuth from "./components/route/ChackAuth";
 import "./scss/index.scss";
+
+console.log('data');
+
 const App = () => {
   const { singIn } = useSelector((state) => state.session);
   const { role } = useSelector((state) => state.user);
 
-  console.log(role);
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <Routes>
