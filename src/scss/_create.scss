@@ -1,0 +1,86 @@
+.create_input {
+  display: block;
+  margin: 10px;
+  width: 100%;
+}
+.create_left {
+  width: 50%;
+  background: #f3f3f3;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create_form {
+  width: 100%;
+}
+.title {
+  text-align: center;
+}
+.create_bio {
+  height: 90px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(47, 45, 45, 0.571);
+  padding: 10px;
+  resize: none;
+}
+.container {
+  max-width: 1300px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px 0;
+  width: 50%;
+  button,
+  select {
+    width: 100%;
+    margin: 10px;
+    height: 46px;
+    border-radius: 10px;
+  }
+}
+select {
+  padding-left: 25px;
+  opacity: 0.5;
+}
+.create_img {
+  width: 60%;
+  height: 70%;
+  border-radius: 17px;
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+  background: #f8f8f8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#inputTag[type="file"] {
+  display: none;
+}
+.create_img label {
+  padding: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.create_plus {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 100px;
+  font-weight: 300;
+}
