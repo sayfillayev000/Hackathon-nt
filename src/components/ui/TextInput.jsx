@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextInput = ({ onChange, type = 'text',id, name = '', placeholder = '', className = '',defaultValue = ''}) => {
+const TextInput = ({diabled, onChange, type = 'text',id, name = '', placeholder = '', className = '',defaultValue = ''}) => {
   return (
     <input
       className={`text-input ${className}`}
