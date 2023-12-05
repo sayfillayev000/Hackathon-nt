@@ -1,7 +1,4 @@
 export const appConfig = {
-    apiPrefix:'https://jsonplaceholder.typicode.com',
-    authentictedEntyPath: '/',
-    unAuthentictedEntyPath: '/register',
-    tokenType: 'Bearer'
+    AuthentictedEntyPath : '/',
+    unAuthentictedEntyPath : '/register'
 }
-// process.env.REACT_APP_BASE_URL

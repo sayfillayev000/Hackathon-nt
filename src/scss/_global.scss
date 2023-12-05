@@ -38,11 +38,10 @@ ol {
     margin: 0 auto;
 }
 
-@mixin globalFontStyle($color:#FFF) {
+@mixin globalFontStyle($color:#FFF, $size: 18px) {
     color: $color;
-    text-align: center;
-    font-family: Red Hat Display;
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: $size;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;

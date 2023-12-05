@@ -1,0 +1,48 @@
+.my_settings {
+    padding: 68px 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: fit-content;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .form__container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .choose_lang {
+            width: 708px;
+            height: auto;
+            flex-shrink: 0;
+            border-radius: 4px;
+            background: #F3F6F9;
+        }
+
+        .toggle__lang {
+            border-radius: 34px;
+            box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+    }
+
+    .btn__save_settings {
+        width: 142px;
+        height: 43px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: #152540;
+        margin: 20px 0 0 auto; 
+    }
+}
+
+.line {
+    width: 1005;
+    height: 1.3px;
+    background: #ECF0F3;
+}

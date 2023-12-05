@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextInput = ({ onChange, type = 'text', name = '', placeholder = '', className = '',defaultValue = ''}) => {
+const TextInput = ({diabled='',id, onChange, type = 'text', name = '', placeholder = '', className = '',defaultValue = ''}) => {
   return (
     <input
       className={`text-input ${className}`}
@@ -9,6 +9,8 @@ const TextInput = ({ onChange, type = 'text', name = '', placeholder = '', class
       onChange={e =>  onChange?.(e.target.value)}
       placeholder={placeholder}
       defaultValue={defaultValue}
+      disabled={diabled}
+      id={id}
     />
   );
 };
