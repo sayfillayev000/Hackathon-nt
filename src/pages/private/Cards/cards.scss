@@ -1,0 +1,36 @@
+.category {
+  display: block;
+  .category__title {
+    color: #c9ac8c;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  .category__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+    width: 900px;
+    margin: 22px auto;
+    li > a {
+      color: rgba(13, 13, 13, 0.6);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.card__container {
+  display: flex;
+  row-gap: 24px;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px ;
+}

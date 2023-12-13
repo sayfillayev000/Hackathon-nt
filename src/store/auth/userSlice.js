@@ -9,8 +9,14 @@ export const initialState = {
 export const userSlice = createSlice({
   name: "auth/user",
   initialState,
-  reducers: {},
+  reducers: {
+    setUser(state, action){
+    state.fullName = `${action.payload.firs_name} ${action.payload.last_name}`;
+    state.email = action.payload.email;
+    state.phone_number = action.payload.phone_number;
+    }
+  },
 });
 
-export const {} = userSlice.actions;
+export const {setUser} = userSlice.actions;
 export default userSlice.reducer;

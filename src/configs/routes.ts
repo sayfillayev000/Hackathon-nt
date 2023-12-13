@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 const Register = lazy(() => import("../pages/auth/Register"));
 const Login = lazy(() => import("../pages/auth/Login"));
-const Home = lazy(() => import("../pages/private/Home"));
+const Asosiy = lazy(() => import("../pages/private/Asosiy"));
 const Books = lazy(() => import("../pages/private/Books"));
 const Profile = lazy(() => import("../pages/private/Profile"));
 const ProfileMain = lazy(() => import("../pages/private/profile/Profile"));
@@ -11,6 +11,9 @@ const Security = lazy(() => import("../pages/private/profile/Security"));
 const Settings = lazy(() => import("../pages/private/profile/Settings"));
 const CreateBook = lazy(() => import("../pages/private/create/CreateBook"));
 const CreateAuthor = lazy(() => import("../pages/private/create/CreateAuthor"));
+const Home = lazy(() => import("../pages/private/Home"));
+const BooksCards = lazy(() => import("../pages/private/BooksCards"));
+// const Cards = lazy(() => import("../pages/private/Cards"));
 
 export const authRoutes = [
   {
@@ -26,10 +29,24 @@ export const authRoutes = [
 ];
 export const protectRoutes = [
   {
-    key: "home",
+    key: "Asosiy",
     path: "/",
     role: ["admin", "user"],
-    component: Home,
+    component: Asosiy,
+    children: [
+      {
+        key: "Home",
+        path: "/",
+        role: ["admin", "user"],
+        component: Home,
+      },
+      {
+        key: "Book",
+        path: "/book",
+        role: ["admin", "user"],
+        component: BooksCards,
+      },
+    ],
   },
   {
     key: "books",
