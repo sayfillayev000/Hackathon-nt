@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../../../components/ui/Button'
 import Dropdown from '../../../components/ui/DropDown'
 import Toggle from '../../../components/ui/Checked'
+
 const Settings = () => {
   return (
     <>

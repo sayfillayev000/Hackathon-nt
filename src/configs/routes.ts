@@ -5,7 +5,7 @@ const Register = lazy(() => import("../pages/auth/Register"));
 const Login = lazy(() => import("../pages/auth/Login"));
 const Asosiy = lazy(() => import("../pages/private/Asosiy"));
 const Books = lazy(() => import("../pages/private/Books"));
-const Profile = lazy(() => import("../pages/private/Profile"));
+const Profile = lazy(() => import("../pages/private/profile/index"));
 const ProfileMain = lazy(() => import("../pages/private/profile/Profile"));
 const Security = lazy(() => import("../pages/private/profile/Security"));
 const Settings = lazy(() => import("../pages/private/profile/Settings"));
