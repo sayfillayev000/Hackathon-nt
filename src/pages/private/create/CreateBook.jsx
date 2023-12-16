@@ -2,9 +2,11 @@ import React from "react";
 import TextInput from "../../../components/ui/TextInput";
 import Form from "../../../components/template/Form";
 import Button from "../../../components/ui/Button";
+import './create.scss'
+
 const CreateBook = () => {
   return (
-    <div className="container">
+    <div className="container create__book">
       <div className="create_left">
         <Form className={"create_img"}>
           <label htmlFor="inputTag">
@@ -45,7 +47,7 @@ const CreateBook = () => {
           </select>
           <textarea className={"create_bio"} placeholder={"Bio"} />
 
-          <Button>Create</Button>
+          <Button type="submit">Create</Button>
         </Form>
       </div>
     </div>

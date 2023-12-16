@@ -1,8 +1,8 @@
 export const appConfig = {
-  apiPrefix: "https://bookss.pythonanywhere.com/api/v1/",
+  apiPrefix: import.meta.env.VITE_APP_BASE_URL,
   authentictedEntyPath: "/",
   unAuthentictedEntyPath: "/register",
   tokenType: "Bearer",
 };
 
-// process.env.REACT_APP_BASE_URL
+

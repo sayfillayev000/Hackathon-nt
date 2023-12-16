@@ -8,14 +8,16 @@ import Button from "../../components/ui/Button";
 import useAuth from "../../utils/hooks/useAuth";
 import getFormValue from "../../utils/getFormValue";
 import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
 
 const Register = () => {
+ const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
   const { singUp } = useAuth();
   const hendleSubmit = async () => {
     const values = getFormValue("register-form");
     const res = await singUp(values);
     !res.success && toast.error(res.message);
-    // console.log(values);
+     axios.post(`${BASE_URL}/singup`)
   };
   return (
     <AuthContainer img={SingUpImg}>
