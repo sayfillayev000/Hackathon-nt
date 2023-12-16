@@ -1,0 +1,116 @@
+.single__aftir__card {
+  display: flex;
+  justify-content: space-between;
+  .aftir__img {
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+  }
+  .single__aftir__info {
+    width: 671px;
+    .single__aftir__title {
+      color: #d1b89d;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 8px;
+    }
+    .book__info {
+      display: flex;
+      margin-top: 13px;
+      justify-content: space-between;
+      h4 {
+        color: rgba(13, 13, 13, 0.6);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      h5 {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .tuliq__malumot__line {
+      margin: 40px 0 12px 0;
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      h4 {
+        color: #d1b89d;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      span {
+        width: 510.637px;
+        border-bottom: 2px solid rgba(209, 184, 157, 0.6);
+      }
+    }
+    .single__aftir__subTitle,
+    .aftir__create > p,
+    .aftir__delete > p {
+      color: rgba(13, 13, 13, 0.8);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .aftir__tugilgan__info {
+      display: flex;
+      align-items: center;
+      margin-top: 44px;
+      span {
+        color: #d1b89d;
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.4%;
+        padding: 0 16px;
+      }
+      .aftir__create > h4,
+      .aftir__delete > h4 {
+        color: #d1b89d;
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.4%;
+      }
+    }
+  }
+}
+.asarlar {
+  margin: 100px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    color: #d1b89d;
+    text-align: center;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  h6 {
+    color: #0d0d0d;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.single__aftir__books {
+  display: flex;
+  gap: 30px;
+  //   flex-wrap: wrap;
+  overflow: hidden;
+
+  .single__aftir__book {
+  }
+}

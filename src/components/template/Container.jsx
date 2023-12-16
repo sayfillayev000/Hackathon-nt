@@ -4,7 +4,7 @@ import React from 'react'
 
 const Container = ({children ,className}) => {
   return (
-    <div className={'container'+(className ? ' '+className : '')}>{children}</div>
+    <div className={'container' (className ? ' '+className : '')}>{children}</div>
   )
 }
 

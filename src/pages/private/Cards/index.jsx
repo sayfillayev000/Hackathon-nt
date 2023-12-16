@@ -3,11 +3,12 @@ import "./cards.scss";
 import { NavLink } from "react-router-dom";
 
 import { avloniy } from "../../../assets/images";
-import { AftirCard } from "..";
+import { AftirCard, Hero } from "..";
 
 const index = () => {
   return (
     <div className="category container">
+      <Hero />
       <h1 className="category__title">Asosiy kategoriyalar</h1>
       <ul className="category__navbar">
         <li>
@@ -25,36 +26,42 @@ const index = () => {
       </ul>
       <div className="card__container">
         <AftirCard
+          id={`/1`}
           className={""}
           title="Abdulla Avloniy"
           subTitle="1878-1934"
           img={avloniy}
         />
         <AftirCard
+          id={`/2`}
           className={""}
           title="Abdulla Avloniy"
           subTitle="1878-1934"
           img={avloniy}
         />
         <AftirCard
+          id={`/3`}
           className={""}
           title="Abdulla Avloniy"
           subTitle="1878-1934"
           img={avloniy}
         />
         <AftirCard
+          id={`/4`}
           className={""}
           title="Abdulla Avloniy"
           subTitle="1878-1934"
           img={avloniy}
-        /> 
+        />
         <AftirCard
+          id={`/5`}
           className={""}
           title="Abdulla Avloniy"
           subTitle="1878-1934"
           img={avloniy}
-        /> 
+        />
         <AftirCard
+          id={`/6`}
           className={""}
           title="Abdulla Avloniy"
           subTitle="1878-1934"

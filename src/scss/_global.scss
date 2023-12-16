@@ -3,26 +3,21 @@
 $White-Base: #FFF;
 $Black-Base: #000;
 
-// 
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-;
-
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-;
 
 a {
     text-decoration: none;
 }
 
-;
 
 li,
 ol {
@@ -48,5 +43,4 @@ button{
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
-    /* 200% */
 }

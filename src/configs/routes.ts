@@ -13,7 +13,8 @@ const CreateBook = lazy(() => import("../pages/private/create/CreateBook"));
 const CreateAuthor = lazy(() => import("../pages/private/create/CreateAuthor"));
 const Home = lazy(() => import("../pages/private/Home"));
 const BooksCards = lazy(() => import("../pages/private/BooksCards"));
-// const Cards = lazy(() => import("../pages/private/Cards"));
+const SingleAftir = lazy(() => import("../pages/private/SingleAftir"));
+const SingleBook = lazy(() => import("../pages/private/SingleBook"));
 
 export const authRoutes = [
   {
@@ -45,6 +46,18 @@ export const protectRoutes = [
         path: "/book",
         role: ["admin", "user"],
         component: BooksCards,
+      },
+      {
+        key: "Book",
+        path: "/book/:id",
+        role: ["admin", "user"],
+        component: SingleBook,
+      },
+      {
+        key: "SingleAftir",
+        path: "/:id",
+        role: ["admin", "user"],
+        component: SingleAftir,
       },
     ],
   },
