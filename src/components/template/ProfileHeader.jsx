@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-
 const ProfileHeader = () => {
   const [active, setActive] = useState('');
   useEffect(() => {
@@ -18,7 +17,7 @@ const ProfileHeader = () => {
   const Items = [
     {
       name: 'Profile',
-      path: '/profile/' || "/profile/profile",
+      path: '/profile/',
     },
     {
       name: 'Security',
@@ -31,6 +30,7 @@ const ProfileHeader = () => {
   ];
 
   return (
+
     <header>
       <ul>
         {Items.map((item, index) => (
