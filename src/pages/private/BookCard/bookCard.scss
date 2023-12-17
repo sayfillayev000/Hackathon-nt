@@ -1,0 +1,26 @@
+.card__book {
+  width: 190px;
+
+  border-radius: 22px 22px 0px 0px;
+  cursor: pointer;
+  .card__bottom {
+    width: 100%;
+    padding: 12px 0;
+    background: #f5f5f5;
+    h1 {
+      margin-bottom: 6px;
+      color: #000;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
